@@ -32,9 +32,9 @@ var server = http.createServer(function(request, response) {
         response.statusCode = 200
         response.setHeader('Content-Type', 'text/html;charset=utf-8')
         response.write(`
-<link rel="stylesheet" href="./style.css">
-<h1>你好 </h1>
-`)
+        <link rel="stylesheet" href="./style.css">
+        <h1>你好 </h1>
+        `)
         response.end()
     } else if (path === '/style.css') {
         response.statusCode = 200
@@ -45,39 +45,7 @@ var server = http.createServer(function(request, response) {
         response.statusCode = 404
         response.end()
     }
-    // if (path === '/') {
-    //     response.statusCode = 200
-    //     response.setHeader('Content-Type', 'text/html;charset=utf-8')
-    //         // 防止乱码
-    //     response.write(`
-    //     <!DOCTYPE html>
-    //     <head>
-    //     <link rel = "stylesheet" href="/x">
-    //     <script src='/y'></script>
-    //     </head>
-    //     <body>
-    //     <h1>何加劲</h1>
-    //     </body> `)
-    //         // 响应的内容
-    //     response.end()
-    // } else if (path === '/x') {
-    //     response.statusCode = 200
-    //         // 成功就返回200
-    //     response.setHeader('Content-Type', 'text/css;charset=utf-8')
-    //     response.write(`body{color: red;}`)
-    //     response.end()
-    // } else if (path === '/y') {
-    //     response.statusCode = 200
-    //         // 成功就返回200
-    //     response.setHeader('Content-Type', 'text/javascript;charset=utf-8')
-    //     response.write(`console.log('我是js!')`)
-    //     response.end()
-    // } else {
-    //     response.statusCode = 404
-    //     response.setHeader('Content-Type', 'text/html;charset=utf-8')
-    //     response.write(`你输入的路径不存在对应的内容`)
-    //     response.end()
-    // }
+
 
     /******** 代码结束，下面不要看 ************/
 })
