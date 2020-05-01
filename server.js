@@ -32,8 +32,8 @@ var server = http.createServer(function(request, response) {
         response.statusCode = 200
         response.setHeader('Content-Type', 'text/html;charset=utf-8')
         response.write(`
-        <link rel="stylesheet" href="./style.css">
-        <h1>何加劲 </h1>
+        
+        何加劲
         `)
         response.end()
     } else if (path === '/style.css') {
